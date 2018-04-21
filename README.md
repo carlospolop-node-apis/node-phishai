@@ -8,14 +8,14 @@ Use Node to check for phising domains in [PhishAI](https://www.phish.ai)
 ## How to use
 
 ```javascript
-const phisai = require('phishai');
+const phishai = require('phishai');
 
-phisai.setApiKey = "<YOUR API KEY>"
+phishai.setApiKey = "<YOUR API KEY>"
 
 // Use checkDomain(<domain>) to check that domain against PhisAI
 // A promise will be returned
 var domain = "https://example.com"
-phisai.checkDomain(domain).then(function(result){ 
+phishai.checkDomain(domain).then(function(result){ 
     console.log(result);
 }, function(err) {
     console.log(err);
