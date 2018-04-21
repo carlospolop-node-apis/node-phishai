@@ -10,12 +10,15 @@ Use Node to check for phising domains in [PhishAI](https://www.phish.ai)
 ```javascript
 const phishai = require('phishai');
 
-phishai.setApiKey("<YOUR API KEY>")
+phishai.setApiKey("<YOUR API KEY>");
+
+var id = "";
 
 // Use checkDomain(<domain>) to check that domain against PhisAI
 // A promise will be returned
 var domain = "https://example.com"
-phishai.checkDomain(domain).then(function(result){ 
+phishai.checkDomain(domain).then(function(result){
+    id = result.scan_id;
     console.log(result);
 }, function(err) {
     console.log(err);
@@ -28,7 +31,6 @@ Output example
 
 // Use checkId(<id>) to get the report of the Id
 // A promise will be returned
-id = "wP7T0DRanBVZCEB4fI3j"
 phishai.checkId(id).then(function(result){ 
     console.log(result);
 }, function(err) {
