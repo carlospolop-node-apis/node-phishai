@@ -1,0 +1,28 @@
+{
+  "name": "phisai",
+  "version": "1.0.1",
+  "description": "Use Node to check for phising domains in PhisAI",
+  "main": "phisai.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlospolop-node-apis/node-phisai.git"
+  },
+  "keywords": [
+    "api",
+    "phisai",
+    "phising",
+    "ai"
+  ],
+  "author": "Carlos Polop <carlospolop@gmail.com> (https://malwareworld.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlospolop-node-apis/node-phisai/issues"
+  },
+  "homepage": "https://github.com/carlospolop-node-apis/node-phisai#readme",
+  "dependencies": {
+    "request": "^2.85.0"
+  }
+}
