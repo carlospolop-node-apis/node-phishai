@@ -10,7 +10,7 @@ Use Node to check for phising domains in [PhishAI](https://www.phish.ai)
 ```javascript
 const phishai = require('phishai');
 
-phishai.setApiKey = "<YOUR API KEY>"
+phishai.setApiKey("<YOUR API KEY>")
 
 // Use checkDomain(<domain>) to check that domain against PhisAI
 // A promise will be returned
@@ -29,7 +29,7 @@ Output example
 // Use checkId(<id>) to get the report of the Id
 // A promise will be returned
 id = "wP7T0DRanBVZCEB4fI3j"
-checkId(id).then(function(result){ 
+phishai.checkId(id).then(function(result){ 
     console.log(result);
 }, function(err) {
     console.log(err);
